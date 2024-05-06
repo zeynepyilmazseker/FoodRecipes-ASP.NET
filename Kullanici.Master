@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="YemekTarifleriSitem.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 700px;
+            background-color: #fff;
+            margin-left: 0px;
+        }
+
+        .auto-style5 {
+            text-align: center;
+            background-color: #99CCFF;
+            height: 39px;
+        }
+
+        .auto-style6 {
+            text-align: center;
+        }
+
+        .auto-style7 {
+            font-size: large;
+        }
+
+        .auto-style8 {
+            font-size: medium;
+        }
+
+        .auto-style12 {
+            width: 700px;
+            height: 50px;
+        }
+
+
+
+        .auto-style15 {
+            background-color: #FFFFFF;
+            width: 700px;
+            height: 35px;
+        }
+
+
+
+        .auto-style18 {
+            width: 450px;
+            float: left;
+            height: auto;
+            margin-left: 46px;
+        }
+
+
+        .auto-style19 {
+            font-weight: bold;
+            background-color: #FF9900;
+        }
+
+
+        .auto-style20 {
+            width: 662px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #99CCFF;">
+            <asp:Image ID="Image1" runat="server" Height="152px" ImageUrl="~/resimler/meyvesebzeheader.png" Width="701px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; background-color: #fff;" class="auto-style12">
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style5"><a href="AnaSayfa.aspx"><strong>ANA SAYFA</strong></a></td>
+                    <td class="auto-style5"><a href="GununYemegi.aspx"><strong>GÜNÜN YEMEĞİ</strong></a></td>
+                    <td class="auto-style5"><a href="TarifOner.aspx"><strong>TARİF ÖNER</strong></a></td>
+                    <td class="auto-style5"><a href="Hakkimizda.aspx"><strong>HAKKIMIZDA</strong></a></td>
+                    <td class="auto-style5"><a href="iletisim.aspx"><strong>İLETİŞİM</strong></a></td>
+                    <td class="auto-style5"><a href="AdminKayıtOl.aspx"><strong>ADMİN</strong></a></td>
+                </tr>
+
+            </table>
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px"></div>
+
+        <div style="margin-left: 300px;" class="auto-style15">
+
+            <div style="float: left; height: 20px; width: 490px">
+                <asp:TextBox ID="TxtSearchBar" runat="server" PlaceHolder="Yemek adı giriniz..." Width="485px" Style="background-color: #99CCFF"></asp:TextBox>
+            </div>
+            <div style="width: 200px; height: 20px; float: left;">
+                <strong>
+                    <asp:Button ID="BtnAra" runat="server" Text="Arama Yap" Width="206px" Height="23px" CssClass="auto-style19" OnClick="BtnAra_Click" />
+                </strong>
+            </div>
+
+
+        </div>
+        <div style="margin-left: 300px; height: 15px; width: 700px"></div>
+
+
+        <div style="margin-left: 300px; width: 700px; height: auto;">
+
+            <div style="width: 200px; float: left; height: auto; background-color: #99CCFF;">
+                <div class="auto-style6">
+                    <strong><span class="auto-style7">KATEGORİLER</span></strong><br />
+                    <br />
+                </div>
+                <div class="auto-style6">
+                    <strong>
+                        <asp:DataList ID="DataList1" runat="server" CssClass="auto-style8" Width="199px">
+                            <ItemTemplate>
+                                <div>
+                                    <div style="border: thin solid #808080">
+                                        <a href="KategoriDetay.aspx?Kategoriid=<%#Eval("Kategoriid") %>">
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label></a>
+                                        &nbsp;(
+                                <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                                        )
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </strong>
+                </div>
+            </div>
+            <div style="background-color: #99CCFF;" class="auto-style18">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+
+
+        </div>
+        <div style="clear: both;"></div>
+        <div style="background-color: #99CCFF; color: #fff; text-align: center; padding: 20px; margin-top: 20px; margin-left: 300px; margin-right: auto;" class="auto-style20">
+            &copy; 2024 Yemek Tarifleri Sitem. Tüm hakları saklıdır.
+    <br />
+            <a href="https://www.youtube.com/">
+                <asp:Image ID="Image2" runat="server" Height="25px" ImageUrl="~/ikonlar/youtube.png" Width="25px" /></a>
+            &nbsp;&nbsp;&nbsp;
+   <a href="https://www.instagram.com/">
+       <asp:Image ID="Image3" runat="server" Height="25px" ImageUrl="~/ikonlar/instagram.png" Width="25px" /></a>
+            &nbsp;
+        </div>
+
+
+    </form>
+</body>
+</html>
+

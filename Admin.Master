@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YemekTarifleriSitem.Admin" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .auto-style6 {
+            text-align: center;
+        }
+
+              
+
+        .auto-style18 {
+            width: 450px;
+            float: left;
+            height: auto;
+            margin-left: 46px;
+        }
+      
+    
+        .auto-style19 {
+            width: 100%;
+        }
+        .auto-style20 {
+            height: 25px;
+            font-size: x-large;
+        }
+      
+    
+        .auto-style22 {
+            font-size: x-large;
+        }
+      
+    
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #99CCFF;">
+            <asp:Image ID="Image1" runat="server" Height="152px" ImageUrl="~/resimler/admın.png" Width="701px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; width:700px;height:20px" ></div>
+
+
+        <div style="margin-left: 300px; width: 700px; height: auto;">
+
+            <div style="width: 200px; float: left; height: auto; background-color: #99CCFF;">
+                <div class="auto-style6">
+                    <table class="auto-style19">
+                        <tr>
+                            <td class="auto-style20"><strong>MENÜLER</strong></td>
+                        </tr>
+                        <tr>
+                           <td style="border: thin solid #000000">
+                               <asp:Image ID="Image2" runat="server" CssClass="auto-style22" Height="15px" ImageUrl="~/ikonlar/category.png" Width="15px" />
+                               <strong> &nbsp;<a href="Kategoriler.aspx" class="auto-style22">KATEGORİLER</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image3" runat="server" CssClass="auto-style22" Height="20px" ImageUrl="~/ikonlar/restaurant.png" Width="20px" />
+                                <strong>&nbsp;<a href="Yemekler.aspx" class="auto-style22">YEMEKLER</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image4" runat="server" CssClass="auto-style22" Height="20px" ImageUrl="~/ikonlar/comment.png" Width="20px" />
+                                <strong>&nbsp;<a href="Yorumlar.aspx" class="auto-style22">YORUMLAR</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image5" runat="server" CssClass="auto-style22" Height="20px" ImageUrl="~/ikonlar/email.png" Width="20px" />
+                                <strong>&nbsp;<a href="Mesajlar.aspx" class="auto-style22">MESAJLAR</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image6" runat="server" CssClass="auto-style22" Height="20px" ImageUrl="~/ikonlar/restaurant.png" Width="20px" />
+                                <strong>&nbsp;<a href="GununYemegiAdmin.aspx" class="auto-style22">GÜNÜN YEMEĞİ</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image7" runat="server" CssClass="auto-style22" Height="20px" ImageUrl="~/resimler/choose.png" Width="20px" />
+                                <strong>&nbsp;<a href="TarifOneriAdmin.aspx" class="auto-style22">TARİF ÖNERİLER</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image8" runat="server" CssClass="auto-style22" Height="20px" ImageUrl="~/ikonlar/info.png" Width="20px" />
+                                <strong>&nbsp;<a href="HakkımızdaAdmin.aspx" class="auto-style22">HAKKKIMIZDA</a></strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000">
+                                <asp:Image ID="Image9" runat="server" Height="20px" ImageUrl="~/ikonlar/info.png" Width="20px" />
+                                <strong><a href="Raporlama.aspx">RAPORLAR</a</strong></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div style="background-color: #99CCFF;" class="auto-style18">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </form>
+</body>
+</html>
+
