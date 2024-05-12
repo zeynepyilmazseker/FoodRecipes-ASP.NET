@@ -41,6 +41,12 @@
         }
       
     
+        .auto-style23 {
+            font-size: large;
+            text-align: center;
+        }
+      
+    
     </style>
 </head>
 <body>
@@ -99,6 +105,10 @@
                             <td style="border: thin solid #000000">
                                 <asp:Image ID="Image9" runat="server" Height="20px" ImageUrl="~/ikonlar/info.png" Width="20px" />
                                 <strong><a href="Raporlama.aspx">RAPORLAR</a</strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #000000" class="auto-style23">
+                                <strong><a href="AnaSayfa.aspx">Ana Sayfa</a></strong></td>
                         </tr>
                     </table>
                 </div>

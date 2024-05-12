@@ -28,6 +28,12 @@
             height: 26px;
             width: 114px;
         }
+    .auto-style28 {
+        font-weight: bold;
+        font-size: x-large;
+        color: #FF0000;
+        background-color: #FFFF00;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -62,7 +68,7 @@
         <tr>
             <td class="auto-style27">&nbsp;</td>
             <td class="auto-style25">
-                <asp:Button ID="Button1" runat="server" CssClass="auto-style22" OnClick="Button1_Click" Text="Onayla" Width="150px" />
+                <asp:Button ID="Button1" runat="server" CssClass="auto-style28" OnClick="Button1_Click" Text="Onayla" Width="150px" />
             </td>
         </tr>
     </table>

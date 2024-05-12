@@ -6,7 +6,8 @@
     }
     .auto-style21 {
         height: 26px;
-    }
+            width: 574px;
+        }
     .auto-style23 {
         text-align: right;
     }
@@ -15,7 +16,7 @@
         text-align: right;
     }
     .auto-style25 {
-        text-align: center;
+        text-align: left;
         font-size: x-large;
     }
     .auto-style26 {
@@ -25,7 +26,10 @@
         width: 230px;
         font-weight: bold;
     }
-</style>
+        .auto-style27 {
+            width: 574px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style20">
@@ -34,7 +38,7 @@
     </tr>
     <tr>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td class="auto-style27">&nbsp;</td>
     </tr>
     <tr>
         <td class="auto-style24"><strong>Ad Soyad:</strong></td>
@@ -44,37 +48,37 @@
     </tr>
     <tr>
         <td class="auto-style23"><strong>Mail Adresi:</strong></td>
-        <td>
+        <td class="auto-style27">
             <asp:TextBox ID="TBMail" runat="server" CssClass="tb5" Height="20px" Width="200px" TextMode="Email"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style23"><strong>Konu:</strong></td>
-        <td>
+        <td class="auto-style27">
             <asp:TextBox ID="TBKonu" runat="server" CssClass="tb5" Height="20px" Width="200px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style23"><strong>Mesajınız:</strong></td>
-        <td>
+        <td class="auto-style27">
             <asp:TextBox ID="TBMesaj" runat="server" CssClass="tb5" Height="100px" TextMode="MultiLine" Width="200px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
-        <td><strong>
+        <td class="auto-style27"><strong>
             <asp:Button ID="Button1" runat="server" CssClass="auto-style26" Height="30px" Text="Mesaj Gönder" Width="200px" OnClick="Button1_Click" />
             </strong></td>
     </tr>
     <tr>
         <td>&nbsp;</td>
-        <td><strong>
+        <td class="auto-style27"><strong>
             <asp:Label ID="LblMessage" runat="server" CssClass="auto-style7"></asp:Label>
             </strong></td>
     </tr>
     <tr>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td class="auto-style27">&nbsp;</td>
     </tr>
 </table>
 </asp:Content>

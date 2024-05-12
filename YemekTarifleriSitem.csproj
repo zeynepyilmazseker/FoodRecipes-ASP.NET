@@ -358,6 +358,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ikonlar\yemekresimleri\" />
+    <Folder Include="yemekresimleri\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Raporlar\Report1.rdlc" />

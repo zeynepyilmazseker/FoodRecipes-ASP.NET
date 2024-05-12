@@ -77,7 +77,7 @@
 <tr>
     <td>&nbsp;</td>
     <td><strong>
-        <asp:Button ID="kayitol" runat="server" CssClass="btn" OnClick="kayitol_Click" Text="Kayıt Ol" Width="200px" style="font-weight: bold; font-size: large;" Height="41px" />
+        <asp:Button ID="kayitol" runat="server" CssClass="btn" OnClick="kayitol_Click" Text="Kayıt ol" Width="200px" style="font-weight: bold; font-size: large; color: #66FF33; background-color: #FFFF00;" Height="41px" />
         </strong></td>
 </tr>
 <tr>

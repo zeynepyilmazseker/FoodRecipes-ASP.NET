@@ -50,7 +50,7 @@
         <tr>
             <td class="auto-style22"><strong>Tarif Ad:</strong></td>
             <td>
-                <asp:TextBox ID="TxtTarifAd" runat="server" Width="270px" CssClass="tb5"></asp:TextBox>
+                <asp:TextBox ID="TxtTarifAd" runat="server" Width="270px"></asp:TextBox>
             </td>
         </tr>
         <tr>
